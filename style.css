@@ -68,3 +68,11 @@ hr {
   color:black;
   margin-bottom:0px;
 }
+
+.last {
+  position : fixed;
+  left : 12.5%;
+ bottom:0px;
+  width:75%;
+  
+}
