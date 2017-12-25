@@ -43,9 +43,11 @@
     padding:0;
 }
 
-#kalender {
+#kalender,#aeroport, #aerocomp, #aeross, #galadinner {
     color: white;
     background-color: black;
     padding-top: 25px;
     padding-bottom: 25px;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
 }
