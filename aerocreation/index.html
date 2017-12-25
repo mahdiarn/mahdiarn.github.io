@@ -15,28 +15,31 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            <div class="navbar-collapse collapse show" id="navbarsExample04" style="">
+            <div class="navbar-collapse collapse show" id="navbarsExample04">
                 <ul class="navbar-nav mr-auto">        
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#" id="homelink">Home</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#aerocomp">Aerocompetition</a>
+                    <a class="nav-link" href="#aerocomp" id="aerocomplink">Aerocompetition</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#aeroport">Aeroport</a>
+                    <a class="nav-link" href="#aeroport" id="aeroportlink">Aeroport</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#aeross">Aero Student Summit</a>
+                    <a class="nav-link" href="#aeross" id="aerosslink">Aero Student Summit</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#partner">Our Partner</a>
+                    <a class="nav-link" href="#aeross" id="galadinnerlink">Gala Dinner</a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link" href="#partner" id="partnerlink">Our Partner</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#cp">About Us</a>
+                    <a class="nav-link" href="#cp" id="cplink">About Us</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#throwback">Flashback</a>
+                    <a class="nav-link" href="#throwback" id="throwbacklink">Flashback</a>
                 </li>                                
                 </ul>
             </div>
@@ -50,13 +53,13 @@
             <!-- Buttons -->
             <div class="row">
                 <div class="col-sm">
-                        <button type="button" class="btn btn-primary fixedbutton" id="button0">Events</button><button type="button" class="btn btn-primary fixedbutton" id="button1" onclick="location.href='#aerocomp';">Aerocomp</button><br><button type="button" class="btn btn-primary fixedbutton" id="button2" onclick="location.href='#aeroport';">Aeroport</button><br><button type="button" class="btn btn-primary fixedbutton" id="button3" onclick="location.href='#aeross';">Aero Student Summit</button><br><button type="button" class="btn btn-primary fixedbutton" id="button4" onclick="location.href='#galadinner';">Gala Dinner</button>
+                    <button type="button" class="btn btn-primary fixedbutton" id="button0">Events</button><button type="button" class="btn btn-primary fixedbutton" id="button1" >Aerocomp</button><br><button type="button" class="btn btn-primary fixedbutton" id="button2" >Aeroport</button><br><button type="button" class="btn btn-primary fixedbutton" id="button3" >Aero Student Summit</button><br><button type="button" class="btn btn-primary fixedbutton" id="button4">Gala Dinner</button>
                 </div>
                 <div class="col-sm">
-                    <button type="button" class="btn btn-primary fixedbutton" id="button5"  onclick="location.href='#partner';">Our Partner</button>
+                    <button type="button" class="btn btn-primary fixedbutton" id="button5"  >Our Partner</button>
                 </div>
                 <div class="col-sm">
-                    <button type="button" class="btn btn-primary fixedbutton" id="button6" onclick="location.href='#cp';">About Us</button>
+                    <button type="button" class="btn btn-primary fixedbutton" id="button6" >About Us</button>
                 </div>
             </div>
             
@@ -113,7 +116,7 @@
             <!-- Throwback -->
             <div class="row" id="throwback">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Throwback</h1>
+                    <h1 class="text-center">Kolom untuk Throwback</h1>                    
                 </div>
             </div>
         </div>        
@@ -163,6 +166,69 @@
         }
     }, 1000);
     </script>
-
+    <script>    
+    $(function(){
+        $("#aerocomplink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aerocomp").offset().top
+            }, 200);
+            return false;
+        });
+        $("#aeroportlink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aeroport").offset().top
+            }, 200);
+            return false;
+        });
+        $("#aerosslink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aeross").offset().top
+            }, 200);
+            return false;
+        });
+        $("#galadinnerlink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#galadinner").offset().top
+            }, 200);
+            return false;
+        });
+        $("#button1").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aerocomp").offset().top
+            }, 200);
+            return false;
+        });
+        $("#button2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aeroport").offset().top
+            }, 200);
+            return false;
+        });
+        $("#button3").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aeross").offset().top
+            }, 200);
+            return false;
+        });
+        $("#button4").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#galadinner").offset().top
+            }, 200);
+            return false;
+        });
+        $("#button5").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#partner").offset().top
+            }, 200);
+            return false;
+        });
+        $("#button6").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#cp").offset().top
+            }, 200);
+            return false;
+        });
+    });
+    </script>
 </body>
 </html>
