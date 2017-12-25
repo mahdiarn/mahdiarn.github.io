@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aerocreation 2018</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/aeroexpo-custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Aero Creation 2018</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="navbar-collapse collapse show" id="navbarsExample04" style="">
+                <ul class="navbar-nav mr-auto">        
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aerocompetition</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aeroport</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aero Student Summit</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Partner</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Flashback</a>
+                </li>                                
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- Youtube Video -->
+            <div class="videoWrapper">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/aNeDfrX75x4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+
+            <!-- Buttons -->
+            <div class="row">
+                <div class="col-sm">
+                        <button type="button" class="btn btn-primary fixedbutton" id="button0">Events</button><button type="button" class="btn btn-primary fixedbutton" id="button1">Aerocomp</button><br><button type="button" class="btn btn-primary fixedbutton" id="button2">Aeroport</button><br><button type="button" class="btn btn-primary fixedbutton" id="button3">Aero Student Summit</button><br><button type="button" class="btn btn-primary fixedbutton" id="button4">Gala Dinner</button>
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn btn-primary fixedbutton" id="button5">Our Partner</button>
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn btn-primary fixedbutton" id="button6">About Us</button>
+                </div>
+            </div>
+            
+            <!-- Calender -->    
+            <div class="row" id="kalender">
+                <div class="col-lg">
+                        <h1 id="demo" class="text-center"></h1>
+                        <h2 class="text-center">Pendaftaran Aerocompetition mahasiswa</h2>  
+                </div>
+            </div>
+            
+
+        </div>        
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js" async></script>
+    <script>
+        $( "#button0" ).click(function() {
+            $( "#button0" ).toggle();
+            $( "#button1" ).toggle("fast");
+            $( "#button2" ).toggle("fast");
+            $( "#button3" ).toggle("fast");
+            $( "#button4" ).toggle("fast");
+        });
+    </script>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 7, 2018 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+        
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            window.location.replace("./index2.html");
+        }
+    }, 1000);
+    </script>
+
+</body>
+</html>
