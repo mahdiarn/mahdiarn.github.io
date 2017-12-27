@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aerocreation 2018</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/aeroexpo-custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/aeroexpo-custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.flipcountdown.css" />
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -36,10 +37,10 @@
                     <a class="nav-link" href="#partner" id="partnerlink">Our Partner</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#cp" id="cplink">About Us</a>
+                    <a class="nav-link" href="#about" id="aboutlink">About Us</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href="#throwback" id="throwbacklink">Flashback</a>
+                    <a class="nav-link" href="#throwback" id="throwbacklink">Throwback</a>
                 </li>                                
                 </ul>
             </div>
@@ -66,57 +67,106 @@
             <!-- Calender -->    
             <div class="row" id="kalender">
                 <div class="col-lg">
-                        <h1 id="demo" class="text-center"></h1>
-                        <h2 class="text-center">Pendaftaran Aerocompetition mahasiswa</h2>  
+                        <table style="border:0px;margin:0 auto;float:none;" class="">
+                                <tr>
+                                    <td style="width:80px;text-align:center;">Hari</td>
+                                    <td style="width:80px;text-align:center;">Jam</td>
+                                    <td style="width:80px;text-align:center;">Menit</td>
+                                    <td style="width:80px;text-align:center;">Detik</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-center"><span id="countdown"></span></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4" class="text-center"><br></td>
+                                </tr>
+                            </table>
+                        <h2 class="text-center">Batas pendaftaran Aerocompetition mahasiswa</h2>  
                 </div>
             </div>
             
             <!-- Aerocomp -->
             <div class="row" id="aerocomp">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Aerocomp</h1>
+                    <img src="./img/aerocomp-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Aerocompetition</h1>
+                    <p class="text-justify">Aerocompetition adalah lomba yang memiliki 4 kategori, yaitu lomba mading untuk sd dan sederajat, lomba roket air untuk smp dan sederajat, lomba karya tulis untuk sma dan sederajat, lomba business case, terbuka untuk seluruh mahasiswa, pendaftaran mulai pertengahan november sampai awal january, ( bisa di follow OA nya di @rsf7504z untuk info lebih lanjut ) , di main event ini akan ada final dari SMP - Univ yang setiap kategori akan diadakan 2 hari dari sabtu sampai hari minggu untuk pengumuman nya.</p>
+                </div>
+            </div>
+            <!-- Aerocomp - SD -->
+            <div class="row" id="sd">
+                <div class="col-lg">
+                    <img src="./img/sd-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Kolom untuk SD</h1>
+                </div>
+            </div>
+            <!-- Aerocomp - SMP -->
+            <div class="row" id="smp">
+                <div class="col-lg">
+                    <img src="./img/smp-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Kolom untuk SMP</h1>
+                </div>
+            </div>
+            <!-- Aerocomp - SMA -->
+            <div class="row" id="sma">
+                <div class="col-lg">
+                    <img src="./img/sma-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Kolom untuk SMA</h1>
+                </div>
+            </div>
+            <!-- Aerocomp - Mahasiswa -->
+            <div class="row" id="mahasiswa">
+                <div class="col-lg">
+                    <img src="./img/mahasiswa-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Kolom untuk Mahasiswa</h1>
                 </div>
             </div>
             <!-- Aeroport -->
             <div class="row" id="aeroport">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Aeroport</h1>
+                    <img src="./img/aeroport-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Aeroport</h1>
+                    <p class="text-justify">Aeroport adalah acara pameran dan wahana yang disediakan untuk masyarakat umum yang akan memamerkan hasil karya dari mahasiswa, komunitas serta perusahaan, selain itu ada pula wahana untuk permainan dan stand lomba untuk menentukan juara favorit.</p>
                 </div>
             </div>
             <!-- Aero Student Summit -->
             <div class="row" id="aeross">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Aero Student Summit</h1>
+                    <img src="./img/aeross-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Aero Student Summit</h1>
+                    <p class="text-justify">Aero Student Summit bertujuan untuk silaturahmi antar mahasiswa aero dan juga membahas isu dari perusahaan tertentu yang akan dibahas dan diserahkan secara simbolis dalam acara galla dinner, hal ini bertujuan dukungan mahasiswa terhadap penerbangan di Indonesia.</p>
                 </div>
             </div>
             <!-- Gala Dinner -->
             <div class="row" id="galadinner">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Gala Dinner</h1>
+                    <img src="./img/galadinner-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Gala Dinner</h1>
+                    <p class="text-justify">Pada hari pertama malam, akan diadakan makan malam bersama dengan mengundang tokoh tokoh penting seperti petinggi perusahaan, dosen penerbangan, alumni penerbangan yang masih berada di dunia penerbangan, perwakilan PN Indo dan pak habibie, ini merupaka momen silaturahmi antar generasi dan semoga pada saat acara ini bisa dilaksanalan bukti konkret terhadap dukungan ke proyek R80 pak Habibie.</p>
                 </div>
             </div>
             <!-- Partner -->
             <div class="row" id="partner">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Partner</h1>
+                    <img src="./img/partner-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Media Partner</h1>
+                    <p class="text-center">Coming Soon</p>
                 </div>
             </div>
             <!-- Contact Person -->
-            <div class="row" id="cp">
+            <div class="row" id="about">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Contact Person</h1>
-                </div>
-            </div>
-            <!-- Media Sosial -->
-            <div class="row" id="medsos">
-                <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Media Sosial</h1>
+                    <img src="./img/about-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">About Us</h1>
+                    <p class="text-center">Coming Soon</p>
                 </div>
             </div>
             <!-- Throwback -->
             <div class="row" id="throwback">
                 <div class="col-lg">
-                    <h1 class="text-center">Kolom untuk Throwback</h1>                    
+                        <img src="./img/throwback-icon.png" class="mx-auto d-block">
+                    <h1 class="text-center">Throwback</h1>                    
                 </div>
             </div>
         </div>        
@@ -125,9 +175,11 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.flipcountdown.js"></script>
     <script src="https://unpkg.com/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js" async></script>
     <script>
+    //Display Toggler
         $( "#button0" ).click(function() {
             $( "#button0" ).toggle();
             $( "#button1" ).toggle("fast");
@@ -135,38 +187,16 @@
             $( "#button3" ).toggle("fast");
             $( "#button4" ).toggle("fast");
         });
+        $("#aerocomp").click(function(){
+            $("#sd").toggle("fast");
+            $("#smp").toggle("fast");
+            $("#sma").toggle("fast");
+            $("#mahasiswa").toggle("fast");
+        });
     </script>
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 7, 2018 00:00:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get todays date and time
-        var now = new Date().getTime();
-        
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
-        
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-        
-        // If the count down is over, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            window.location.replace("./index2.html");
-        }
-    }, 1000);
-    </script>
+    
     <script>    
+    // Scroll Link
     $(function(){
         $("#aerocomplink").click(function() {
             $('html, body').animate({
@@ -189,6 +219,24 @@
         $("#galadinnerlink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#galadinner").offset().top
+            }, 200);
+            return false;
+        });
+        $("#partnerlink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#partner").offset().top
+            }, 200);
+            return false;
+        });
+        $("#aboutlink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 200);
+            return false;
+        });
+        $("#throwbacklink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#throwback").offset().top
             }, 200);
             return false;
         });
@@ -224,9 +272,18 @@
         });
         $("#button6").click(function() {
             $('html, body').animate({
-                scrollTop: $("#cp").offset().top
+                scrollTop: $("#about").offset().top
             }, 200);
             return false;
+        });
+    });
+    </script>
+    <script>
+    //Script Countdown
+    jQuery(function($){        
+        $('#countdown').flipcountdown({
+            size:'md',
+            beforeDateTime:'1/10/2018 00:00:01',           
         });
     });
     </script>

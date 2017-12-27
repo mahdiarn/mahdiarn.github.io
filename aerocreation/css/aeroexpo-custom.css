@@ -1,3 +1,11 @@
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -35,6 +43,10 @@
     height: 25%;
 }
 
+#sd,#smp,#sma,#mahasiswa {
+    display:none;
+}
+
 .row {
     margin:0;
 }
@@ -43,11 +55,21 @@
     padding:0;
 }
 
-#kalender,#aeroport, #aerocomp, #aeross, #galadinner, #partner, #cp, #medsos, #throwback {
+#kalender,#aeroport,#aerocomp, #aeross, #galadinner, #partner, #about, #medsos, #throwback,#sd,#smp,#sma,#mahasiswa {
     color: white;
-    background-color: black;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top:50px;
+    padding-bottom:50px;
     border-bottom: 1px solid;
     border-bottom-color: white;
+}
+
+
+#aerocomp:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#sd img,#smp img,#sma img,#mahasiswa img,#galadinner img,#partner img,#about img {
+    width: 127px;
+    height: 127px;
 }
