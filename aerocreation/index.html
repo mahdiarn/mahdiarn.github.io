@@ -9,9 +9,10 @@
     <link rel="stylesheet" type="text/css" href="./css/aeroexpo-custom.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.flipcountdown.css" />
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navigation">
             <a class="navbar-brand" href="#">AEROCREATION 2018</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,6 +47,7 @@
                 </ul>
             </div>
         </nav>
+        <img src="./img/goup.png" id="scrollUpBtn">
         <div class="container">
             <!-- Youtube Video -->
             <div class="videoWrapper">
@@ -333,6 +335,41 @@
                     <img src="./img/throwback-icon.png" class="mx-auto d-block">
                     <br>
                     <h1 class="text-center">Throwback</h1>                    
+                    <br>
+                    <br>
+                    <div class="slider-for">
+                        <div index="0"><img class="mx-auto d-block" src="./img/throwback/1.jpg"/></div>
+                        <div index="1"><img class="mx-auto d-block" src="./img/throwback/2.jpg"/></div>
+                        <div index="2"><img class="mx-auto d-block" src="./img/throwback/3.jpg"/></div>
+                        <div index="3"><img class="mx-auto d-block" src="./img/throwback/4.jpg"/></div>
+                        <div index="4"><img class="mx-auto d-block" src="./img/throwback/5.jpg"/></div>
+                        <div index="5"><img class="mx-auto d-block" src="./img/throwback/6.jpg"/></div>
+                        <div index="6"><img class="mx-auto d-block" src="./img/throwback/7.jpg"/></div>
+                        <div index="7"><img class="mx-auto d-block" src="./img/throwback/8.jpg"/></div>
+                        <div index="8"><img class="mx-auto d-block" src="./img/throwback/9.jpg"/></div>
+                        <div index="9"><img class="mx-auto d-block" src="./img/throwback/10.jpg"/></div>
+                        <div index="10"><img class="mx-auto d-block" src="./img/throwback/11.jpg"/></div>
+                        <div index="11"><img class="mx-auto d-block" src="./img/throwback/12.jpg"/></div>
+                        <div index="12"><img class="mx-auto d-block" src="./img/throwback/13.jpg"/></div>
+                        <div index="13"><img class="mx-auto d-block" src="./img/throwback/14.jpg"/></div>
+                    </div>
+                    <br>
+                    <div class="slider-nav text-center">
+                            <div index="0"><img class="mx-auto d-block" src="./img/throwback/1.jpg"/></div>
+                            <div index="1"><img class="mx-auto d-block" src="./img/throwback/2.jpg"/></div>
+                            <div index="2"><img class="mx-auto d-block" src="./img/throwback/3.jpg"/></div>
+                            <div index="3"><img class="mx-auto d-block" src="./img/throwback/4.jpg"/></div>
+                            <div index="4"><img class="mx-auto d-block" src="./img/throwback/5.jpg"/></div>
+                            <div index="5"><img class="mx-auto d-block" src="./img/throwback/6.jpg"/></div>
+                            <div index="6"><img class="mx-auto d-block" src="./img/throwback/7.jpg"/></div>
+                            <div index="7"><img class="mx-auto d-block" src="./img/throwback/8.jpg"/></div>
+                            <div index="8"><img class="mx-auto d-block" src="./img/throwback/9.jpg"/></div>
+                            <div index="9"><img class="mx-auto d-block" src="./img/throwback/10.jpg"/></div>
+                            <div index="10"><img class="mx-auto d-block" src="./img/throwback/11.jpg"/></div>
+                            <div index="11"><img class="mx-auto d-block" src="./img/throwback/12.jpg"/></div>
+                            <div index="12"><img class="mx-auto d-block" src="./img/throwback/13.jpg"/></div>
+                            <div index="13"><img class="mx-auto d-block" src="./img/throwback/14.jpg"/></div>
+                    </div>
                 </div>
             </div>
         </div>        
@@ -345,6 +382,7 @@
     <script src="https://unpkg.com/popper.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js" async></script>
     <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script>
     //Display Toggler
         $( "#button0" ).click(function() {
@@ -368,79 +406,85 @@
         $("#aerocomplink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#aerocomp").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#aeroportlink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#aeroport").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#aerosslink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#aeross").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#galadinnerlink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#galadinner").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#partnerlink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#partner").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#aboutlink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#about").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#throwbacklink").click(function() {
             $('html, body').animate({
                 scrollTop: $("#throwback").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#button1").click(function() {
             $('html, body').animate({
                 scrollTop: $("#aerocomp").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#button2").click(function() {
             $('html, body').animate({
                 scrollTop: $("#aeroport").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#button3").click(function() {
             $('html, body').animate({
                 scrollTop: $("#aeross").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#button4").click(function() {
             $('html, body').animate({
                 scrollTop: $("#galadinner").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#button5").click(function() {
             $('html, body').animate({
                 scrollTop: $("#partner").offset().top
-            }, 200);
+            }, 500);
             return false;
         });
         $("#button6").click(function() {
             $('html, body').animate({
                 scrollTop: $("#about").offset().top
-            }, 200);
+            }, 500);
+            return false;
+        });
+        $("#scrollUpBtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#navigation").offset().top
+            }, 500);
             return false;
         });
     });
@@ -453,6 +497,38 @@
             beforeDateTime:'1/10/2018 00:00:01',           
         });
     });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    });
+    </script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollUpBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollUpBtn").style.display = "none";
+        }
+    }
     </script>
 </body>
 </html>
