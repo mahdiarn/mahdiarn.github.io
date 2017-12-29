@@ -75,6 +75,15 @@ body {
     height: 127px;
 }
 
+#throwback-icon {
+    width:127px;
+}
+
+#table1 img {
+    width:127px;
+}
+    
+
 .slider-for img {
     width:65%;
 }
@@ -102,6 +111,6 @@ body {
 
 @media screen and (max-width:768px) {
 	#scrollUpBtn {
-		display:none !important; 
+		display:none; 
 	}
 }		
