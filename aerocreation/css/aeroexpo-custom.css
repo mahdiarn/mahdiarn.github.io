@@ -70,7 +70,7 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-#sd img,#smp img,#sma img,#mahasiswa img,#galadinner img,#partner img,#about img {
+#sd img,#smp img,#sma img,#mahasiswa img,#galadinner img,#partner-icon,#about img {
     width: 127px;
     height: 127px;
 }
