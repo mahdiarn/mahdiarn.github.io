@@ -56,7 +56,7 @@ body {
     padding:0;
 }
 
-#kalender,#aeroport,#aerocomp, #aeross, #galadinner, #partner, #about, #medsos, #throwback,#sd,#smp,#sma,#mahasiswa {
+#kalender,#aeroport,#aerocomp, #aeross, #galadinner, #sponsor,#partner, #about, #medsos, #throwback,#sd,#smp,#sma,#mahasiswa {
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
     padding-top:50px;
@@ -70,7 +70,7 @@ body {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-#sd img,#smp img,#sma img,#mahasiswa img,#galadinner img,#partner-icon,#about img {
+#sd img,#smp img,#sma img,#mahasiswa img,#galadinner img,#partner-icon,#about img,#sponsor-icon {
     width: 127px;
     height: 127px;
 }
