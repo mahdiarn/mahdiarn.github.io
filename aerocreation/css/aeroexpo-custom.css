@@ -114,3 +114,8 @@ body {
 		display:none; 
 	}
 }		
+
+.vcenter {
+    margin-top: auto;
+    margin-bottom: auto;
+}
